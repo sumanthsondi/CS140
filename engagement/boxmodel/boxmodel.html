@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="boxmodel.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Peter's Box Model</h1>
+        <p>Learning about blocks, inline elements, figures, boxes, and CSS units.</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Block and Inline Tags</h2>
+
+            <p>
+                This is a paragraph, which is a block element.
+                Here is an <strong>inline element</strong>,
+                an <a href="https://marvel.com">marvel website</a>,
+                and some <em>italic text</em>.
+            </p>
+
+            <div class="example-box">
+                This is a div. The div is also a block element.
+            </div>
+
+            <p>
+                Examples of block tags are
+                <strong>&lt;header&gt;</strong>,
+                <strong>&lt;main&gt;</strong>, and
+                <strong>&lt;p&gt;</strong>.
+            </p>
+
+            <p>
+                Examples of inline tags are
+                <strong>&lt;strong&gt;</strong>,
+                <strong>&lt;a&gt;</strong>, and
+                <strong>&lt;em&gt;</strong>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Images and the Figure Tag</h2>
+
+            <p>
+                This image is inside a paragraph:
+                <img src="araku1.jpg"
+                     width="200">
+                The image is an inline element.
+            </p>
+
+            <figure>
+                <img src="araku1.jpg"
+                     width="400">
+
+                <figcaption>
+                    Araku Valley, Andhra Pradesh, India
+                </figcaption>
+            </figure>
+
+            <p>
+                The figure element is a block element because it starts
+                on a new line and creates its own section for the image
+                and caption.
+            </p>
+        </section>
+
+        <section>
+            <h2>The Box Model</h2>
+
+            <div class="box-model">
+
+                <h3>My Box</h3>
+
+                <p>
+                    This box demonstrates the CSS box model.
+                    The box has content, padding, a border, and margin.
+                </p>
+
+            </div>
+
+            <p>
+                The four layers of the box model are content,
+                padding, border, and margin.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>CSS Units of Measurement</h2>
+
+            <div class="unit-example">
+                This box uses percentage, em, and rem units.
+            </div>
+
+            <p class="unit-text">
+                This text uses the em unit for its font size.
+            </p>
+
+            <p class="percent-text">
+                This paragraph uses a percentage for its width.
+            </p>
+
+
+        </section>
+
+        <section>
+
+            <h3>1. What is the difference between block tags and inline tags?</h3>
+
+            <p>
+                Block tags start on a new line and normally take up
+                the available width of their container. Inline tags
+                stay within the same line and only take up as much
+                space as their content needs.
+            </p>
+
+
+            <h3>2. What are margin, border, and padding?</h3>
+
+            <p>
+                Padding is the space between the content and the border.
+                The border surrounds the content and padding.
+                Margin is the space outside the border that separates
+                the box from other elements.
+            </p>
+
+
+            <h3>3. What are units of measurement you can use in CSS?</h3>
+
+            <p>
+                CSS units include pixels (px), percentages (%), em,
+                rem, viewport width (vw), viewport height (vh),
+                points (pt), inches (in), centimeters (cm), and
+                millimeters (mm).
+            </p>
+
+
+            <h3>4. When would you use a figure tag?</h3>
+
+            <p>
+                I would use a figure tag when I want to give an image,
+                diagram, or other content its own block and include
+                a caption that describes it.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Peter's Box Model | Web Design</p>
+    </footer>
+
+</body>
+</html>
