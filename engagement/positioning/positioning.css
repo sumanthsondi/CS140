@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+}
+
+
+.float-figure {
+    float: left;
+    width: 300px;
+}
+
+.clear-float {
+    clear: both;
+    padding-top: 10px;
+}
+
+.relative-copy {
+    width: 300px;
+}
+
+.absolute-area {
+    position: relative;
+    min-height: 200px;
+
+}
+
+.absolute-copy {
+    position: absolute;
+    right: 10px;
+    width: 220px;
+}
+
+.fixed-copy {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 150px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: #123b50;
+}
+

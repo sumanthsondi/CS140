@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <link rel="stylesheet" href="positioning.css">
+</head>
+<body>
+    <header>
+        <h1>Peter's CSS Positioning</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#about">Contact</a>
+    </nav>
+
+    <main id="home">
+            <h2>Normal Flow</h2>
+            <p>Normal flow is the default way that HTML elements appear on a web page. Block elements usually stack vertically, while inline elements appear beside each other within a line.</p>
+
+            <h2>Float and Clear</h2>
+
+            <figure class="float-figure">
+                <img src="araku1.jpg">
+                Beautiful Araku Valley, Andhra Pradesh
+            </figure>
+
+            <p>Floating an image to the left allows text to wrap around its right side. This layout is useful for articles, travel stories, and news websites.</p>
+
+            <p>A floated figure can allow the next heading to move up beside the image when the nearby paragraph is short. The clear property makes a heading start below the floated image.</p>
+
+            <h2 class="clear-float">Why Clear a Float?</h2>
+            <p>Clearing a float prevents a heading or section from sitting beside a floated image. It helps separate the next section from the image and its surrounding text.</p>
+
+
+            <h2>Relative Positioning</h2>
+            <p>Relative positioning moves an element from its original location. The space it originally occupied remains in the layout, even after the element moves.</p>
+
+            <figure class="relative-copy">
+                <img src="araku1.jpg">
+                Relative position: moved from its original spot
+            </figure>
+
+            <p>In this example, the figure moves down and to the right. Other elements do not move into the space that the figure originally occupied.</p>
+
+            <h2>Absolute Positioning</h2>
+            <p>Absolute positioning removes an element from normal flow. It can be placed at specific coordinates within its nearest positioned ancestor.</p>
+
+            <div class="absolute-area">
+                <figure class="absolute-copy">
+                    <img src="araku1.jpg">
+                    Absolute position
+                </figure>
+            </div>
+
+            <p>The absolute figure does not reserve its usual space. It stays at its assigned position within its containing area rather than moving with the normal text flow.</p>
+
+            <h2>Fixed Positioning</h2>
+            <p>Fixed positioning attaches an element to the browser window. It stays in the same place on the screen while the page scrolls.</p>
+            <figure class="fixed-copy">
+                <img src="araku1.jpg">
+                Fixed figure
+            </figure>
+
+
+<h2>Mobile Navigation Buttons</h2>
+            <p>Mobile users need navigation links that are easy to tap. Making links block-level elements allows each link to fill the available width.</p>
+
+            <p>Responsive web design helps a page work on different screen sizes. A flexible layout and large navigation buttons make the experience better for everyone.</p>
+        </section>
+
+        <section id="questions">
+            <h2>Questions and Answers</h2>
+
+            <h3>1. What is normal flow in HTML?</h3>
+            <p>Normal flow is the browser's default layout. Block elements stack vertically.</p>
+
+            <h3>2. What does float do? Why do you need to clear the float?</h3>
+            <p>Float moves an element to the left or right so text can wrap around it.</p>
+
+            <h3>3. What do absolute, fixed, and relative do?</h3>
+            <p>Relative moves an element from its original spot while preserving its space. </p>
+
+        
+            <h3>5. Where can you find videos to review what we talked about in class?</h3>
+            <p>The materials are in the canvas files under CS140.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Peter's Positioning Website</p>
+    </footer>
+</body>
+</html>
