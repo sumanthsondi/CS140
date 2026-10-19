@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <header>
+            <h1>Peter's Web Design Grid</h1>
+        </header>
+
+        <main>
+            <h2>My Three-Column Layout</h2>
+
+            <div class="container">
+                <div class="column">
+                    <h3>Column One</h3>
+                    <p>This is the first column.</p>
+                </div>
+
+                <div class="column">
+                    <h3>Column Two</h3>
+                    <p>This is the second column.</p>
+                </div>
+
+                <div class="column">
+                    <h3>Column Three</h3>
+                    <p>This is the third column. </p>
+                </div>
+            </div>
+
+            <h2>Own Parent and Children</h2>
+
+            <p>The box below is another parent. It has four children arranged in a smaller grid.</p>
+
+            <div class="mini-grid">
+                <div class="small-box">Child One</div>
+                <div class="small-box">Child Two</div>
+                <div class="small-box">Child Three</div>
+                <div class="small-box">Child Four</div>
+            </div>
+
+            <h3>1. What is the main difference between CSS Grid and CSS Flex?</h3>
+            <p>So, CSS Grid works with rows and columns together. CSS Flex is mainly used to arrange items in one direction, either in a row or a column.</p>
+
+            <h3>2. Who decides where a child goes on the page?</h3>
+            <p>The parent decides how its children are arranged. In my three-column layout, the container uses CSS Grid to place the three columns. Each column can also be a parent and arrange its own children.</p>
+
+        </main>
+
+        <footer>
+            <p>Peter's Web Design Grid</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
