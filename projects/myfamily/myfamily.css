@@ -1,0 +1,133 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #f2ad0b;
+    color: #fafbfb;
+    padding: 15px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00040b;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.page-layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+aside {
+    width: 25%;
+    box-sizing: border-box;
+}
+
+aside figure {
+    margin: 0;
+}
+
+aside img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+main {
+    flex: 1;
+    min-width: 0;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+article {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+article figure {
+    margin: 0;
+}
+
+article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+figcaption {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #555555;
+}
+
+
+footer {
+    background-color: #eaf2f8;
+    padding: 15px;
+}
+
+@media screen and (max-width: 650px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+        margin: 3px 0;
+    }
+
+    .page-layout {
+        flex-direction: column;
+    }
+
+    main {
+        order: 1;
+        width: 100%;
+    }
+
+    aside {
+        order: 2;
+        width: 100%;
+    }
+
+    .articles {
+        grid-template-columns: 1fr;
+    }
+
+    aside img {
+        max-width: 200px;
+    }
+}
