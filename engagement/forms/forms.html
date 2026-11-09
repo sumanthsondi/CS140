@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="#" method="get">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+
+        <label for="major">Choose Your Major:</label>
+        <select id="major" name="major">
+            <option value="IT">Information Technology</option>
+            <option value="CS">Computer Science</option>
+            <option value="BUS">Business</option>
+        </select>
+        <br>
+
+        <p>Study Level:</p>
+
+        <input type="radio" id="freshman" name="level" value="Freshman">
+        <label for="freshman">Freshman</label>
+
+        <input type="radio" id="sophomore" name="level" value="Sophomore">
+        <label for="sophomore">Sophomore</label>
+
+        <input type="radio" id="junior" name="level" value="Junior">
+        <label for="junior">Junior</label>
+        <br>
+
+        <p>Your Interests:</p>
+
+        <input type="checkbox" id="coding" name="interests" value="Coding">
+        <label for="coding">Coding</label>
+
+        <input type="checkbox" id="gaming" name="interests" value="Gaming">
+        <label for="gaming">Gaming</label>
+
+        <input type="checkbox" id="design" name="interests" value="Design">
+        <label for="design">Design</label>
+        <br><br>
+
+        <label for="about">About yourself:</label>
+        <br>
+        <textarea id="about" name="about" rows="4" cols="30" placeholder="I'm a student at the university."></textarea>
+        <br>
+
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <h3>1. What does the action attribute do?</h3>
+    <p>So the action attribute tells the browser where to send the form information after submission.</p>
+
+    <h3>2. What does the method attribute do?</h3>
+    <p>The method attribute tells the browser how to send the form information.</p>
+
+    <h3>3. What is the difference between POST and GET?</h3>
+    <p>GET sends form information in the URL. POST sends information in the request body instead of showing it in the URL.</p>
+
+    <h3>4. How do you fill in a form control with a preset value, and how is it different from a placeholder?</h3>
+    <p>
+        Text box: Placeholder shows temporary hint text.<br>
+        Textarea: Put the starting text between the opening and closing textarea tags. Placeholder shows hint text.<br>
+        Checkbox: Use the checked attribute to select it by default.<br>
+        Radio button: Use the checked attribute to select one by default.
+    </p>
+
+    <h3>5. List all the form controls that HTML5 added. Which ones did you put in your form?</h3>
+    <p>
+        I added names, email, password, checkbox, range, search,
+       
+    </p>
+
+</body>
+</html>
