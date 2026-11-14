@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Registration Form</h1>
+    </header>
+
+    <main>
+
+        <h2>Personal Information</h2>
+
+        <form action="#" method="get">
+
+            <fieldset>
+                <legend>Account Information</legend>
+
+                <div class="form-row">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your full name">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email">
+                </div>
+
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"
+                           placeholder="Enter your password">
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="Enter your phone number">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Student Information</legend>
+
+                <div class="form-row">
+                    <label for="major">Choose Your Major:</label>
+                    <select id="major" name="major">
+                        <option value="">Select your major</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="CS">Computer Science</option>
+                        <option value="BUS">Business</option>
+                        <option value="VA">Visual Arts</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="birthday">Date of Birth:</label>
+                    <input type="date" id="birthday" name="birthday">
+                </div>
+
+                <div class="form-row">
+                    <label for="about">About Yourself:</label>
+                    <textarea id="about" name="about" rows="4"
+                              placeholder="Tell us about yourself"></textarea>
+                </div>
+
+                <p>Gender:</p>
+
+                <div class="choice-row">
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+
+                <p>Your Interests:</p>
+
+                <div class="choice-row">
+                    <input type="checkbox" id="coding" name="interests" value="Coding">
+                    <label for="coding">Coding</label>
+
+                    <input type="checkbox" id="gaming" name="interests" value="Gaming">
+                    <label for="gaming">Gaming</label>
+
+                    <input type="checkbox" id="design" name="interests" value="Design">
+                    <label for="design">Design</label>
+                </div>
+
+                <div class="choice-row">
+                    <input type="checkbox" id="terms" name="terms" value="Agreed">
+                    <label for="terms">I agree to the terms and conditions.</label>
+                </div>
+
+            </fieldset>
+
+            <button type="submit">Submit Registration</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Peter's Web Design | Student Registration Form</p>
+    </footer>
+
+</body>
+</html>
