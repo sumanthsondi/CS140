@@ -18,7 +18,7 @@
 
         <h2>Personal Information</h2>
 
-        <form action="#" method="get">
+        <form id="signup-form" action="#" method="get">
 
             <fieldset>
                 <legend>Account Information</legend>
@@ -108,11 +108,78 @@
 
         </form>
 
+        <h3>1. What is JavaScript? How did it get its name?</h3>
+        <p>
+            JavaScript is a programming language used to make websites
+            interactive. It was originally called LiveScript and was
+            renamed JavaScript as a marketing decision. It is different
+            from Java.
+        </p>
+
+        <h3>2. What are the two ways you can run JavaScript?</h3>
+        <p>
+            JavaScript can run in a web browser, such as Chrome, or on
+            a server using an environment like Node.js.
+        </p>
+
+        <h3>3. What is jQuery? Is it still popular today?</h3>
+        <p>
+            jQuery is a JavaScript library that makes it easier to work
+            with HTML elements, events, and animations. It is still used
+            on some older websites, but modern JavaScript has replaced
+            many of the reasons developers used it.
+        </p>
+
+        <h3>4. What is the most popular front-end JS library today?</h3>
+        <p>
+            React is one of the most popular front-end JavaScript
+            libraries. It is used to build interactive user interfaces
+            and web applications.
+        </p>
+
+        <h3>5. How does your code prevent the form from being submitted?
+        Why do we need to prevent it?</h3>
+        <p>
+            My JavaScript uses preventDefault() to stop the browser's
+            normal form submission. We prevent it so JavaScript can
+            collect and check the form information without the page
+            automatically reloading.
+        </p>
+
     </main>
 
     <footer>
         <p>&copy; 2026 Peter's Web Design | Student Registration Form</p>
     </footer>
+
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+
+            event.preventDefault();
+
+            alert("Form Submitted");
+
+            const fullname = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const birthday = document.getElementById('birthday').value;
+
+            if (!fullname || !email) {
+                alert("You need a name and email.");
+                return;
+            }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+                birthday: birthday
+            };
+
+            console.log(formData);
+
+        });
+    </script>
 
 </body>
 </html>
