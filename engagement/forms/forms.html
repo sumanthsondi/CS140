@@ -108,40 +108,40 @@
 
         </form>
 
-        <h3>1. What is JavaScript? How did it get its name?</h3>
+        <p id="message"></p>
+
+        <h2>Assignment Questions</h2>
+
+        <h3>1. What is AJAX?</h3>
         <p>
-            JavaScript is a programming language used to make websites
-            interactive. It was originally called LiveScript and was
-            renamed JavaScript as a marketing decision.
+            AJAX stands for Asynchronous JavaScript and XML. It allows
+            a webpage to send and receive information from a server
+            without reloading the entire page.
         </p>
 
-        <h3>2. What are the two ways you can run JavaScript?</h3>
+        <h3>2. Why do you put your JS code in a separate file?</h3>
         <p>
-            JavaScript can run in a web browser, such as Chrome, or on
-            a server using an environment like Node.js.
+            Keeping JavaScript in a separate file makes the code
+            organized, easier to read, maintain, and reuse. It also
+            keeps HTML and JavaScript separate.
         </p>
 
-        <h3>3. What is jQuery? Is it still popular today?</h3>
+        <h3>3. How do you use the inspector (DevTools) to debug your
+        JavaScript? How do you find the line number of an error?</h3>
         <p>
-            jQuery is a JavaScript library that makes it easier to work
-            with HTML elements, events, and animations. It is still used
-            on some older websites, but modern JavaScript has replaced
-            many of the reasons developers used it.
+            I open Inspect and select the Console tab to look for
+            errors. If there is an error, I can click the error message
+            to find the file and line number where the problem happened.
         </p>
 
-        <h3>4. What is the most popular front-end JS library today?</h3>
+        <h3>4. Do your form and fields have the same IDs that your
+        JavaScript uses? Does the Console show any errors? List your IDs,
+        and fix any errors before you submit.</h3>
         <p>
-             It is used to build interactive user interfaces
-            and web applications.
-        </p>
-
-        <h3>5. How does your code prevent the form from being submitted?
-        Why do we need to prevent it?</h3>
-        <p>
-            My JavaScript uses preventDefault() to stop the browser's
-            normal form submission. We prevent it so JavaScript can
-            collect and check the form information without the page
-            automatically reloading.
+            My HTML IDs match the IDs used in my JavaScript:
+            signup-form, name, email, password, birthday, and message.
+            I will check the Console after testing to make sure there
+            are no JavaScript errors.
         </p>
 
     </main>
@@ -150,34 +150,7 @@
         <p>&copy; 2026 Peter's Web Design | Student Registration Form</p>
     </footer>
 
-    <script>
-        document.getElementById('signup-form').addEventListener('submit', function(event) {
-
-            event.preventDefault();
-
-            alert("Form Submitted");
-
-            const fullname = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const birthday = document.getElementById('birthday').value;
-
-            if (!fullname || !email) {
-                alert("You need a name and email.");
-                return;
-            }
-
-            const formData = {
-                name: fullname,
-                email: email,
-                password: password,
-                birthday: birthday
-            };
-
-            console.log(formData);
-
-        });
-    </script>
+    <script src="form.js"></script>
 
 </body>
 </html>
