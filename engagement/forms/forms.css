@@ -43,6 +43,12 @@ textarea {
     border-radius: 4px;
 }
 
+#message {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
 .choice-row {
     display: flex;
     align-items: center;
