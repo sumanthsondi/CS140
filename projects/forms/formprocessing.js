@@ -30,7 +30,6 @@ document.getElementById('signup-form').addEventListener('submit', function(event
 
     const terms = document.getElementById('terms').checked;
 
-    // Validation
 
     if (fullname === "") {
         alert("Please enter your full name.");
@@ -62,7 +61,6 @@ document.getElementById('signup-form').addEventListener('submit', function(event
         return;
     }
 
-    // Collect form data into an object
 
     const formData = {
         name: fullname,
@@ -77,11 +75,9 @@ document.getElementById('signup-form').addEventListener('submit', function(event
         terms: terms
     };
 
-    // Log the object to the Console
 
     console.log(formData);
 
-    // AJAX request
 
     const xhr = new XMLHttpRequest();
 

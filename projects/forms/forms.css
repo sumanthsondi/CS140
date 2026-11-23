@@ -104,6 +104,12 @@ button:hover {
     background-color: #0555b5;
 }
 
+#message {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
 footer {
     background-color: #222;
     color: white;
