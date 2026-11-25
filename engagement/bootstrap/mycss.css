@@ -1,0 +1,12 @@
+body {
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+main {
+    padding-bottom: 30px;
+}
+
+.card {
+    margin-top: 20px;
+}
